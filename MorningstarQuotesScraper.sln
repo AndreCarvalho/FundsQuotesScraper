@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorningstarQuotesScraper", "MorningstarQuotesScraper\MorningstarQuotesScraper.csproj", "{E1F2E7FB-B94C-487E-AAFA-D3A440BB7A05}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{19C7847B-5F8E-499A-A463-7B3D6367068E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{86E08B08-26DD-41F0-96F1-8DB912A55812}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MorningstarQuotesScraper.Tests", "tests\MorningstarQuotesScraper.Tests\MorningstarQuotesScraper.Tests.csproj", "{5804DB1D-D785-425C-8D88-B870E57A50F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MorningstarQuotesScraper", "src\MorningstarQuotesScraper\MorningstarQuotesScraper.csproj", "{B5AFB46B-756E-466E-A320-B0F7EE52CB3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E1F2E7FB-B94C-487E-AAFA-D3A440BB7A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1F2E7FB-B94C-487E-AAFA-D3A440BB7A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1F2E7FB-B94C-487E-AAFA-D3A440BB7A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1F2E7FB-B94C-487E-AAFA-D3A440BB7A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5804DB1D-D785-425C-8D88-B870E57A50F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5804DB1D-D785-425C-8D88-B870E57A50F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5804DB1D-D785-425C-8D88-B870E57A50F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5804DB1D-D785-425C-8D88-B870E57A50F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5AFB46B-756E-466E-A320-B0F7EE52CB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AFB46B-756E-466E-A320-B0F7EE52CB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AFB46B-756E-466E-A320-B0F7EE52CB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AFB46B-756E-466E-A320-B0F7EE52CB3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5804DB1D-D785-425C-8D88-B870E57A50F9} = {86E08B08-26DD-41F0-96F1-8DB912A55812}
+		{B5AFB46B-756E-466E-A320-B0F7EE52CB3D} = {19C7847B-5F8E-499A-A463-7B3D6367068E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB1A0E2B-88E6-43FB-9085-07E32DD304A2}
